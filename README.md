@@ -1,41 +1,67 @@
-# Jest Unit Tests - Validación de Nombre de Usuario
+# ✅ Jest Unit Tests: Validación de Nombre de Usuario
 
-Este repositorio contiene un ejemplo simple de pruebas unitarias utilizando [Jest](https://jestjs.io/) para validar un nombre de usuario.
+Este repositorio contiene pruebas unitarias básicas desarrolladas con [Jest](https://jestjs.io/) para validar la función `validarNombreUsuario`. Es un proyecto de práctica orientado al aprendizaje de testing en JavaScript desde una perspectiva profesional como QA.
 
-## 📂 Contenido
+---
 
-- `validarNombreUsuario.js`: Función que valida nombres de usuario según criterios básicos.
-- `validarNombreUsuario.test.js`: Pruebas unitarias que cubren múltiples casos de validación.
+## 🔍 ¿Qué hace la función?
 
-## 🧪 ¿Qué se valida?
+La función `validarNombreUsuario(nombre)` evalúa si un nombre de usuario es válido bajo estas reglas:
 
-- Que el nombre sea un `string`
-- Que tenga al menos 3 caracteres
-- Que no tenga espacios
-- Que solo contenga caracteres alfanuméricos
+- Debe ser un **string**
+- Tener al menos **3 caracteres**
+- No contener **espacios**
+- Solo aceptar **caracteres alfanuméricos**
 
-## 🛠️ Tecnologías usadas
+---
+
+## 🧪 ¿Qué pruebas incluye?
+
+El archivo `validarNombreUsuario.test.js` contiene **5 pruebas unitarias**:
+
+1. ✅ Retorna `true` para un nombre válido (`usuario123`)
+2. ❌ Retorna `false` si no es un string
+3. ❌ Retorna `false` si tiene menos de 3 caracteres
+4. ❌ Retorna `false` si contiene espacios
+5. ❌ Retorna `false` si contiene caracteres no alfanuméricos
+
+---
+
+
+## 📁 Estructura del repositorio
+
+```
+├── validarNombreUsuario.js        # Función a testear
+├── validarNombreUsuario.test.js   # Pruebas unitarias con Jest
+├── .gitignore                     # Archivos ignorados en Git
+└── README.md                      # Este documento
+```
+
+---
+
+## 🛠️ Tecnologías utilizadas
 
 - Node.js
 - Jest
 
-## 🚀 Cómo ejecutar las pruebas
+---
 
-1. Clona este repositorio
-2. Ejecuta `npm install` para instalar dependencias
-3. Ejecuta `npm test` para correr las pruebas
+## 📦 Instalación y ejecución
 
-## ✅ Resultado esperado
+```bash
+npm install
+npm test
+```
+---
 
-Todas las pruebas deberían pasar si la función está correctamente implementada.
-
-## 📁 .gitignore
-
-Este proyecto incluye un archivo `.gitignore` para evitar subir archivos innecesarios como `node_modules`.
+## 🧠 Notas de aprendizaje
+Este repositorio fue creado como parte del proceso de formación en pruebas unitarias para proyectos reales.  
+Se utiliza `.gitignore` para evitar subir archivos innecesarios como `node_modules`, y se sigue una estructura profesional de trabajo con Git y GitHub.
 
 ---
 
-## 📌 Autor
+## 👩‍💻 Autor
 
-Carolina Álvarez Robayo – [GitHub](https://github.com/caroalvarez01)
-
+**Carolina Álvarez Robayo**  
+Estudiante de Ingeniería de Software y QA 💻  
+[GitHub: @caroalvarez01](https://github.com/caroalvarez01)
